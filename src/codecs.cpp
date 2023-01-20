@@ -121,7 +121,7 @@ extern "C" {
 #endif
 
 #ifdef __CYGWIN__
-	static char EMSG[] = "";
+	static const char EMSG[] = "";
 #else
 #define	EMSG		""
 #endif
@@ -133,7 +133,7 @@ extern "C" {
 	static int gcd(int, int);
 	static void permute_args(int, int, int, char * const *);
 
-	static char *place = EMSG; /* option letter processing */
+	static const char *place = EMSG; /* option letter processing */
 
 							   /* XXX: set optreset to 1 rather than these two */
 	static int nonopt_start = -1; /* first non option argument (for permute) */
