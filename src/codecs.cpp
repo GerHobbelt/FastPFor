@@ -962,13 +962,11 @@ int main(int argc, char **argv) {
           cout << "# generated " << datas.size() << " arrays" << endl;
           cout << "# their size is  " << (1U << K) << endl;
           const uint32_t p = 29 - K;
-          ostringstream convert;
-          convert << p;
           if (splitlongarrays)
             splitLongArrays(datas);
           processparameters pp(true, fulldisplay, displayhistogram,
                                computeentropy, false);
-          Delta::process(myalgos, datas, pp, convert.str());
+          Delta::process(myalgos, datas, pp, std::to_string(p));
         }
         summarize(myalgos, "#");
         return 0;
@@ -982,13 +980,11 @@ int main(int argc, char **argv) {
           cout << "# generated " << datas.size() << " arrays" << endl;
           cout << "# their size is  " << (1U << K) << endl;
           const uint32_t p = 29 - K;
-          ostringstream convert;
-          convert << p;
           if (splitlongarrays)
             splitLongArrays(datas);
           processparameters pp(true, fulldisplay, displayhistogram,
                                computeentropy, false);
-          Delta::process(myalgos, datas, pp, convert.str());
+          Delta::process(myalgos, datas, pp, std::to_string(p));
         }
         summarize(myalgos, "#");
         return 0;
@@ -1002,13 +998,11 @@ int main(int argc, char **argv) {
           cout << "# generated " << datas.size() << " arrays" << endl;
           cout << "# their size is  " << (1U << K) << endl;
           const uint32_t p = 29 - K;
-          ostringstream convert;
-          convert << p;
           if (splitlongarrays)
             splitLongArrays(datas);
           processparameters pp(true, fulldisplay, displayhistogram,
                                computeentropy, false);
-          Delta::process(myalgos, datas, pp, convert.str());
+          Delta::process(myalgos, datas, pp, std::to_string(p));
         }
         summarize(myalgos, "#");
         return 0;
@@ -1022,13 +1016,11 @@ int main(int argc, char **argv) {
           cout << "# generated " << datas.size() << " arrays" << endl;
           cout << "# their size is  " << (1U << K) << endl;
           const uint32_t p = 29 - K;
-          ostringstream convert;
-          convert << p;
           if (splitlongarrays)
             splitLongArrays(datas);
           processparameters pp(true, fulldisplay, displayhistogram,
                                computeentropy, false);
-          Delta::process(myalgos, datas, pp, convert.str());
+          Delta::process(myalgos, datas, pp, std::to_string(p));
         }
         summarize(myalgos, "#");
         return 0;
@@ -1044,13 +1036,11 @@ int main(int argc, char **argv) {
                << " arrays and applied delta coding" << endl;
           cout << "# their size is  " << (1U << K) << endl;
           const uint32_t p = 29 - K;
-          ostringstream convert;
-          convert << p;
           if (splitlongarrays)
             splitLongArrays(datas);
           processparameters pp(false, fulldisplay, displayhistogram,
                                computeentropy, false);
-          Delta::process(myalgos, datas, pp, convert.str());
+          Delta::process(myalgos, datas, pp, std::to_string(p));
         }
         summarize(myalgos, "#");
         return 0;
@@ -1066,13 +1056,11 @@ int main(int argc, char **argv) {
                << " arrays and applied delta coding" << endl;
           cout << "# their size is  " << (1U << K) << endl;
           const uint32_t p = 29 - K;
-          ostringstream convert;
-          convert << p;
           if (splitlongarrays)
             splitLongArrays(datas);
           processparameters pp(false, fulldisplay, displayhistogram,
                                computeentropy, false);
-          Delta::process(myalgos, datas, pp, convert.str());
+          Delta::process(myalgos, datas, pp, std::to_string(p));
         }
         summarize(myalgos, "#");
         return 0;
